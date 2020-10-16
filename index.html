@@ -13,8 +13,10 @@
 </head>
 <body>
   <header>
+    <div class="logo">
+      <img class="left" src="imagens/Mary-Logo.png"></div><!--Logo-->
+    </div><!-- Logo -->
     <div class="center">
-      <div class="logo left">Logo</div><!--logo-->
       <nav class="desktop right">
         <ul>
           <li><a href="">Home</a></li>
@@ -39,16 +41,20 @@
     <div class="clear"></div> 
   </header>
 
-  <section class="banner-principal">
+  <section class="banner-container">
+    <div style="background-image: url('imagens/Background.jpg');" class="banner-single"></div><!--banner-single--> 
+    <div style="background-image: url('imagens/Background1.jpg');" class="banner-single"></div><!--banner-single-->
+    <div style="background-image: url('imagens/Background2.jpg');" class="banner-single"></div><!--banner-single-->
     <div class="overlay"></div><!--overlay-->
-    <div class="center">
-    <form>
-      <h2>Digite Seu E-mail</h2>
-      <input type="email" name="email" required/>
-      <input type="submit" name="acao" value="Cadastrar!"/>
-    </form>
-    </div><!-- center -->
-  </section><!--Banner-Principal-->
+       <div class="center">
+         <form>
+           <h2>Digite Seu E-mail</h2>
+           <input type="email" name="email" required/>
+           <input type="submit" name="acao" value="Cadastrar!"/>
+         </form>
+       </div><!-- center -->
+       <div class="bullets"></div><!-- bullets -->
+  </section><!--banner-container-->
       
     
   <section class="descricao-autor">
@@ -73,7 +79,7 @@
     </div><!--w50 left--> 
     <div class="w50 left">  
       <!-- Carregar Imagens Do Background -->
-      <img class="right" src="imagens/Foto.jpg"/>
+      <img class="perfil" class="right" src="imagens/Foto.jpg"/>
     </div><!--w50 left-->
     <div class="clear"></div>
     </div><!--center-->
@@ -156,14 +162,13 @@
     </section><!--extras-->
   <footer>
     <div class="center">
-      <p>Mary Todos os Direitos Reservados</p>
+      <img class="" src="imagens/Mary-Logo.png"></div><!--Logo-->
+      <p> Todos os Direitos Reservados</p>
     </div><!--center-->
   </footer>
-
-
-    
-      
-  
+  <script src="js/jquery.js"></script>
+  <script src="js/sripts.js"></script>
+  <script src="js/slider.js"></script>
 
 </body>
 </html>
