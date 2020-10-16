@@ -35,12 +35,14 @@ header{
        padding:20px 0;    
        background:#703848;
        }
-header .logo{
-             font-size: 23px;
-             font-weight: 300;
-             text-transform: uppercase;
-             color: white;
-             }
+.logo img{
+          height: 100%;
+          width: 100%;    
+          max-width: 100px;
+          max-height: 90px;
+          cursor: pointer;
+          }
+
 .mobile{
         display: none;
         }
@@ -60,44 +62,52 @@ nav.desktop a{
               color: white;
               text-decoration: none;
               }
-img{
+img.perfil{
     width: 100%;
     max-width: 400px;
     }
-section.banner-principal{
+section.banner-container{
                   width: 100%;
                   height: 600px;
-                  background-image: url("../imagens/Background.jpg");
-                  background-size: cover;
                   position: relative ;
                   }
+.banner-single{
+               position: absolute;
+               left: 0;
+               top: 0;
+               z-index: 1;
+               width: 100%;
+               height: 100%; 
+               background-size: cover;
+               background-position: center;
+               }
 .overlay{
          position: absolute;
          left: 0;
          top: 0;
          width: 100%;
          height: 100%;
-         z-index: 1;
+         z-index: 2;
          background-color: rgba(51,51,51,0.7);
          }
-section.banner-principal form{
+section.banner-container form{
                               width: 93%;
                               max-width: 600px;
-                              z-index: 2;
+                              z-index: 3;
                               position: absolute;
                               left: 50%;
                               top: 50%;
                               transform:translate(-50%,-50%);
                               -ms-transform:translate(-50%,-50%);
                               }
-section.banner-principal form h2{
+section.banner-container form h2{
                                  color: white;
                                  font-weight: 300;
                                  font-size: 30px;
                                  text-align: center;
 
                                  }
-section.banner-principal form input[type=email]{
+section.banner-container form input[type=email]{
                                                 width: 100%;
                                                 height: 66px;
                                                 margin-top: 10px;
@@ -107,7 +117,7 @@ section.banner-principal form input[type=email]{
                                                 padding-left: 15px;
                                                 }
 
-section.banner-principal form input[type=submit]{
+section.banner-container form input[type=submit]{
                                                  width: 100%;
                                                  height: 66px;
                                                  margin-top: 10px;
@@ -208,6 +218,31 @@ footer p{
          font-weight: 400;
          font-size: 16px;
          }
+footer img{
+           max-width: 100px;
+           float: none; 
+           display: block;
+           margin: 0 auto;
+           }
+.bullets{
+         position: absolute;
+         bottom:10px;
+         left: 50%;
+         transform: translateX(-50%);
+         z-index: 5;
+         }
+.bullets span{
+              margin: 0 10px;
+              display: inline-block;
+              width: 15px;
+              height: 15px;
+              border-radius: 50%;
+              cursor: pointer;
+              background-color: #444;
+              }
+.bullets span.active-slider{
+    background: white;
+        }
 @media screen and (max-width: 700px){
                                      nav.desktop{
                                                  display: none;
@@ -219,9 +254,9 @@ footer p{
                                                    width: 100%;
                                                    z-index: 3;
                                                    left: 0;
-                                                   top: 60px;
+                                                   top: 110px;
                                                    position: absolute;
-                                                   display: block;
+                                                   display: none;
                                                    text-align: center;   
                                                    }
                                      nav.mobile li{
@@ -230,12 +265,12 @@ footer p{
                                                    display: block;
                                                    font-size: 15px;
                                                    padding: 8px 0;
-                                                   background: white;
+                                                   background: #703848;
                                                    border-bottom: 1px solid #ccc; 
                                                    }
                                      nav.mobile li a{
                                                      display: block;
-                                                     color: #444;
+                                                     color: white;
                                                      text-decoration: none;
                                                      }
                                      .botao-menu-mobile{
@@ -247,7 +282,7 @@ footer p{
 
 
 @media screen and (max-width: 768px){
-                                     img{
+                                     img.perfil{
                                          float: none !important;
                                          display: block;
                                          margin: 0 auto;
