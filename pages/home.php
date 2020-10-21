@@ -1,50 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Projeto 01 </title>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-  <link href="estilo/all.css" rel="stylesheet"/>
-  <link href="estilo/style.css" rel="stylesheet"/>
-  <meta name="viewport" content=width=device-width, initial-scale=1.0>
-  <meta charset="utf-8" />
-  <meta name="description" content="Descrição do web Site">
-  <meta name="keywords" content="palavras-chave,do,site">
-    
-</head>
-<body>
-  <header>
-    <div class="logo">
-      <img class="left" src="imagens/Mary-Logo.png"></div><!--Logo-->
-    </div><!-- Logo -->
-    <div class="center">
-      <nav class="desktop right">
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Sobre</a></li>
-          <li><a href="">Serviços</a></li>
-          <li><a href="">Contato</a></li>
-        </ul>
-      </nav>
-      
-        <nav class="mobile right">
-          <div class="botao-menu-mobile">
-            <i class="fas fa-align-justify"></i>    
-          </div>
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Sobre</a></li>
-            <li><a href="">Serviços</a></li>
-            <li><a href="">Contato</a></li> 
-          </ul>
-        </nav>
-    </div><!--center-->
-    <div class="clear"></div> 
-  </header>
-
   <section class="banner-container">
-    <div style="background-image: url('imagens/Background.jpg');" class="banner-single"></div><!--banner-single--> 
-    <div style="background-image: url('imagens/Background1.jpg');" class="banner-single"></div><!--banner-single-->
-    <div style="background-image: url('imagens/Background2.jpg');" class="banner-single"></div><!--banner-single-->
+    <div style="background-image: url('<?php echo INCLUDE_PATH; ?>imagens/Background.jpg');" class="banner-single"></div><!--banner-single--> 
+    <div style="background-image: url('<?php echo INCLUDE_PATH; ?>imagens/Background1.jpg');" class="banner-single"></div><!--banner-single-->
+    <div style="background-image: url('<?php echo INCLUDE_PATH; ?>imagens/Background2.jpg');" class="banner-single"></div><!--banner-single-->
     <div class="overlay"></div><!--overlay-->
        <div class="center">
          <form>
@@ -60,8 +17,9 @@
   <section class="descricao-autor">
     <div class="center">
     <div class="w50 left">
-       <h2>Maria José Macena</h2>
-       <p>Contrary to popular belief, Lorem Ipsum is not simply random
+       <h2>Maria José Macena </h2>
+         <p>                 
+         Contrary to popular belief, Lorem Ipsum is not simply random
          text. It has roots in a piece of classical Latin literature
          from 45 BC, making it over 2000 years old. Richard McClintock,
          a Latin professor at Hampden-Sydney College in Virginia,
@@ -75,11 +33,11 @@
          during the Renaissance. The first line of Lorem Ipsum,
          "Lorem ipsum dolor sit amet..", comes from a line in section
          1.10.32.
-       </p>
+         </p>
     </div><!--w50 left--> 
     <div class="w50 left">  
       <!-- Carregar Imagens Do Background -->
-      <img class="perfil" class="right" src="imagens/Foto.jpg"/>
+      <img class="perfil" class="right" src="<?php echo INCLUDE_PATH; ?>imagens/Foto.jpg"/>
     </div><!--w50 left-->
     <div class="clear"></div>
     </div><!--center-->
@@ -142,7 +100,7 @@
        </div><!--depoimento-single-->
       
   
-      </div><!--w50 left-->
+       </div><!--w50 left-->
       <div class="w50 left servicos-container">
         <h2 class="title">Serviços</h2>
         <div class="servicos">
@@ -160,20 +118,4 @@
       </div><!--center-->
       <div class="clear"></div>
     </section><!--extras-->
-  <footer>
-    <div class="center">
-      <img class="" src="imagens/Mary-Logo.png"></div><!--Logo-->
-      <p> Todos os Direitos Reservados</p>
-    </div><!--center-->
-  </footer>
-  <script src="js/jquery.js"></script>
-  <script src="js/sripts.js"></script>
-  <script src="js/slider.js"></script>
-
-</body>
-</html>
-
-
-
-
-    
+ 
